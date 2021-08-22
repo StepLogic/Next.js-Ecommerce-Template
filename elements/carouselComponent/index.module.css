@@ -1,0 +1,6 @@
+.carouselIndicators >div >div >button{
+    background-color: black!important;
+    border-radius: 50% !important;
+    height: 12px!important;
+    width: 12px!important;
+}

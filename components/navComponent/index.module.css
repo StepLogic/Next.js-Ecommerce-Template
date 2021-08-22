@@ -1,0 +1,114 @@
+
+.menuBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding-right: 0.8em;
+    padding-left: 1em;
+}
+.logo{
+    width: 2em;
+    height: fit-content;
+    margin-bottom:auto;
+    margin-top: auto;
+
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.optionsItem{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    justify-content: space-between;
+    padding: 1em;
+
+}
+.optionsItemIcon{
+    margin-right: auto;
+    margin-left: auto;
+}
+.optionsItemText{
+    text-transform: capitalize;
+
+}
+.searchButton{
+    border-radius: 4em;
+    position: relative;
+    z-index: 2;
+   left: 2.4em;
+
+}
+.menuItem{
+    color:#222;
+
+}
+.menuItem:hover{
+color:#56cfe1;
+}
+
+.searchText{
+    position: relative;
+    border-radius: 2em;
+
+}
+.searchForm{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+
+
+@media (max-width: 468px) {
+    .menuContainer{
+        position: fixed;
+        width: 100%;
+
+    }
+    .menuHead{
+        display: flex;
+        flex-direction: row;
+        flex-basis:100%;
+    }
+    .menuButton{
+
+    }
+    .options{
+      display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       margin-left: auto;
+    }
+
+
+     .menu{
+            display: flex;
+            flex-direction: column;
+             overflow: hidden;
+             background-color: white;
+             margin-right: auto;
+     }
+    .menuItem{
+        font-size: 1em;
+    }
+    .searchButton{
+        border-radius:0;
+        position:unset;
+    }
+}
+

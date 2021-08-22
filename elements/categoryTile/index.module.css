@@ -1,0 +1,13 @@
+.image{
+    transition: transform 0.6s;
+}
+.image:hover{
+    transform: scale(1.11);
+}
+.correct{margin-top: 110%}
+@media (max-width:400px) {
+    .correct{margin-top: 133%;
+
+    }
+
+}

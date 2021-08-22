@@ -1,0 +1,9 @@
+@media (max-width: 468px) {
+.selector{
+    background-color:black;
+    opacity:0.6;}
+ .selector:focus{
+     background-color:white;
+     opacity:0.8;
+ }
+}

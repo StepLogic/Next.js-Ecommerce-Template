@@ -1,0 +1,8 @@
+
+.correct{width:45.6%}
+@media (max-width:400px) {
+    .correct{
+      width:48%
+    }
+
+}

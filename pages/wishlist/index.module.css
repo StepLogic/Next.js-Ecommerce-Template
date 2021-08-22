@@ -1,0 +1,7 @@
+.banner{
+}
+@media (max-width:424px) {
+    .banner{
+        margin-top: 12%;
+    }
+}

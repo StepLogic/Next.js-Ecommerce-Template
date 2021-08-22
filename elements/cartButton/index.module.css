@@ -1,0 +1,7 @@
+@media (max-width: 468px) {
+     .popOverContainer{
+         position: relative;
+         right: 0;
+         color: #f5f5f5;
+     }
+}

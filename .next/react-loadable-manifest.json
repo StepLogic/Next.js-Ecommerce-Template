@@ -1,0 +1,74 @@
+{
+  "../components/bannerComponent/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../components/cartComponent/cartItem/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../components/cartComponent/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../components/footerComponent/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../components/navComponent/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../components/navComponent/navItem/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../components/navComponent/userMenu/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../components/paymentComponent/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../components/paymentForm/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../elements/policies/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../elements/product/index.js -> react-responsive/src": {
+    "id": "./node_modules/react-responsive/src/index.js",
+    "files": [
+      "static/chunks/node_modules_react-responsive_src_index_js.js"
+    ]
+  },
+  "../node_modules/next/dist/client/next-dev.js -> ./dev/noop": {
+    "id": "./node_modules/next/dist/client/dev/noop.js",
+    "files": [
+      "static/chunks/node_modules_next_dist_client_dev_noop_js.js"
+    ]
+  }
+}

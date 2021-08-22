@@ -1,0 +1,12 @@
+.banner{
+}
+.link{}
+.link:hover{
+    color: #56cfe1;
+}
+@media (max-width:424px) {
+    .link{}
+    .banner{
+        margin-top: 12%;
+    }
+}

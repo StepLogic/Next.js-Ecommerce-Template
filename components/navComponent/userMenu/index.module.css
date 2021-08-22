@@ -1,0 +1,21 @@
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: white;
+    margin-left: auto;
+}
+
+@media (max-width: 468px) {
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: white;
+        margin-left: auto;
+    }
+
+}
+
