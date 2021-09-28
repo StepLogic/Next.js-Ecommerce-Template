@@ -1,0 +1,6 @@
+export const ADD = 'ADD'
+export const REMOVE = 'REMOVE'
+export const DECREASEQ= 'INCREASEQ'
+export const INCREASEQ = 'DECREASEQ'
+export const SIGN_OUT = 'ADD'
+export const SIGN_IN = 'REMOVE'

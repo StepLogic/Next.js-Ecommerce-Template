@@ -7,12 +7,16 @@ import {BiHeart} from "react-icons/bi";
 import {AiOutlineEye} from "react-icons/ai";
 import {FiShoppingCart} from "react-icons/fi";
 import Link from "next/link";
+import {addItem} from "../../utils/actions";
+import {useDispatch} from "react-redux";
 export default function Desktop(props){
     const [image,setImage]=useState(props?.thumbnails[0])
     const [over,setOverlay]=useState(false)
     const [qv,setQv]=useState(false)
     const [ac,setAc]=useState(false)
+    const dispatch = useDispatch()
     const ref=useRef(null)
+
     function stars(){
         let array=[];
         for(let i=0;i<props.rating;i++){
@@ -22,9 +26,11 @@ export default function Desktop(props){
     }
     const overlay=()=>{
         let qvColor=qv?"black":"white"
-        let qvContent=qv?<AiOutlineEye style={{marginTop:'auto',marginBottom:'auto',marginLeft:"auto",marginRight:"auto",fontSize:"18px",color:"white"}}/>: <span style={{margin:'auto'}}>Quick View</span>
+        let qvContent=qv? <Link as={`/item/test`}  href={{pathname:"/item/[slug]",query:{item:JSON.stringify({...props,quantity:0})}}}>
+            <AiOutlineEye  style={{marginTop:'auto',marginBottom:'auto',marginLeft:"auto",marginRight:"auto",fontSize:"18px",color:"white"}}/>
+        </Link>: <span style={{margin:'auto'}}>Quick View</span>
         let acColor=ac?"black":"white"
-        let acContent=ac?  <FiShoppingCart style={{marginTop:'auto',marginBottom:'auto',marginLeft:"auto",marginRight:"auto",fontSize:"18px",color:'white'}}/>
+        let acContent=ac?  <FiShoppingCart onClick={()=>{dispatch(addItem({...props}))}} style={{marginTop:'auto',marginBottom:'auto',marginLeft:"auto",marginRight:"auto",fontSize:"18px",color:'white'}}/>
             : <span style={{margin:'auto'}}>Quick Shop</span>
 
 
@@ -32,7 +38,7 @@ export default function Desktop(props){
             <div style={over?{position:'absolute',display:"flex",backgroundColor:"rgba(0,0,0,0.2)",flexDirection:"column",zIndex:3,top:"0", width:"18em",transition:"0.5s ease-in-out"}
                 :{maxWidth:"100%",maxHeight:"0px",display:"flex",flexDirection:"column",position:"absolute",top:"-1em"}}
                  onMouseLeave={()=>{setImage(props?.thumbnails[0]);setOverlay(false)}}>
-                <div style={{display:'flex',flexDirection:"row",fontSize:"18px",borderRadius:"50px",backgroundColor:qvColor,width:"50%"
+                <div  style={{display:'flex',flexDirection:"row",fontSize:"18px",borderRadius:"50px",backgroundColor:qvColor,width:"50%"
                     ,height:"40px",transition:"0.5s",marginRight:"auto",marginLeft:"auto",marginTop:"7.5em",opacity:1}} onMouseEnter={()=>{setQv(true)}} onMouseLeave={()=>{setQv(false)}}>
                 <div style={{display:'flex',flexDirection:"row",margin:"auto"}}>
                     {qvContent}
@@ -76,7 +82,6 @@ export default function Desktop(props){
                             ,width:"12px",height:"12px",borderRadius:"50%",
                             backgroundColor:'#ec3120'
                             ,margin:'auto',marginBottom:'auto',marginLeft:"auto",marginRight:"auto"}}>
-
                         </div>
                     </div>
 

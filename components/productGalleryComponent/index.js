@@ -10,7 +10,7 @@ export default function ProductGalleryComponent(props) {
         <>
             <MediaQuery minDeviceWidth={428}>
                 {(matches) =>
-                    matches ?<Desktop/>:<Mobile/>
+                    matches ?<Desktop {...props}/>:<Mobile {...props}/>
                 }
             </MediaQuery>
         </>);

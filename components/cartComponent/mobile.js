@@ -1,10 +1,18 @@
 import Image from "next/image"
-import React, {useState} from "react";
+import React, {useMemo, useState} from "react";
 import style from "./index.module.css"
 import {AiOutlineClose} from "react-icons/ai";
 import CartItem from "./cartItem";
+import {useDispatch, useSelector} from "react-redux";
 
 export default function Mobile(props){
+    const count = useSelector((state) => state.selectedItems)
+      const cartItems= useMemo(() => {
+      return count.map((value,i)=>{
+          return <CartItem {...value} key={value.name+"_"+i}/>
+      })
+      },[count])
+
         return(
              <>
                 <div className={style.menuOverlay}
@@ -16,10 +24,10 @@ export default function Mobile(props){
                             <button className={"btn"} onClick={props.handleClick} style={{marginRight:"auto"}}><AiOutlineClose/></button>
                             <span style={{fontSize:"16px",lineHeight:"20px",margin:'auto 1em'}}>Shopping Cart</span>
                         </div>
-                        <CartItem/>
-                        <button className={'btn'} style={{width:'70%',height:'2.6em',borderRadius:"50px"
+                        {cartItems}
+                        {count.length>0?<button className={'btn'} style={{width:'70%',height:'2.6em',borderRadius:"50px"
                             ,backgroundColor:"#56cfe1",fontSize:'14px',fontWeight:'bold',color:'white'
-                            ,marginLeft:'auto',marginRight:"auto",marginTop:'2em'}}>Check Out</button>
+                            ,marginLeft:'auto',marginRight:"auto",marginTop:'2em'}}>Check Out</button>:<></>}
 
                     </div>
                 </div>

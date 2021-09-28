@@ -29,7 +29,10 @@ export default function Desktop(){
                 <Input style={{margin:"1em 0",width:"92%"}} inputType={"text"} placeholder={"Address"} />
                 <Input style={{margin:"1em 0",width:"92%"}} inputType={"text"} placeholder={"City"} />
                 <Selector style={{margin:"1em 0",width:"92%"}} inputType={"text"} placeholder={"Ghana"} />
-                <button className={style.button} style={{color:"white",backgroundColor:"#197bbd",width:"92%",margin:"1em 0",borderRadius:"50px",padding:"1em"}}>Continue</button>
+                <Link as={`/checkout/payment`}  href={{pathname:"/checkout/payment"}}>
+                    <button className={style.button} style={{color:"white",backgroundColor:"#197bbd",width:"92%",margin:"1em 0",borderRadius:"50px",padding:"1em"}}>Continue</button>
+                </Link>
+
             </form>
         </>
     );
