@@ -4,6 +4,3 @@
 .image:hover{
     transform: scale(1.11);
 }
-.delete{
-    animation: .6s ease-in-out infinite beat_heart
-}

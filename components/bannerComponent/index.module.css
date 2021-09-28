@@ -1,13 +1,3 @@
 @media (max-width: 468px) {
-    @keyframes slide{
-        from {  width:0}
-        to { width:"100%"}
-    }
-    .imageOut{
-        position: relative;
-        animation-name:slide;
-        animation-duration: 2s;
-
-    }
 
 }
