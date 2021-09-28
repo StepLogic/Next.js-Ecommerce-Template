@@ -198,6 +198,7 @@ export default function Home() {
                     name={product.name}
                     thumbnails={product.thumbnails}
                     price={product.price}
+                    key={product.name + "_" + i}
                   />
                 );
               })}
