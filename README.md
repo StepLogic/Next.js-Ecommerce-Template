@@ -1,5 +1,6 @@
 
 ## Next.js Ecommerce Template
+
 This project is inspired by Cezerin
 Feel free to open any issues or help out by joining !
 It is currently deployed [here]()
@@ -8,6 +9,8 @@ It is currently deployed [here]()
 - Improve Speed
 - Create Admin Panel
 - Add Payment
+- Better UI/UX
+- Build API
 ```bash
 npm install
 npm run dev
